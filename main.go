@@ -32,7 +32,7 @@ func main() {
   }
   case "push": {
     if len(args) <= 3 {
-      fmt.Println("Action '" + action + "' missing args: need <ServerAddr> <RemotePFilePath>  <LocalFilePath>")
+      fmt.Println("Action '" + action + "' missing args: need <ServerAddr> <LocalFilePath> <RemoteFilePath>")
       return
 		}
 		fmt.Printf("Push: %s -> %s\n", args[2], args[3])
@@ -40,7 +40,7 @@ func main() {
   }
   case "pull": {
     if len(args) <= 3 {
-      fmt.Println("Action '" + action + "' missing args: need <ServerAddr> <RemotePFilePath>  <LocalFilePath>")
+      fmt.Println("Action '" + action + "' missing args: need <ServerAddr> <RemoteFilePath>  <LocalFilePath>")
       return
 		}
 		fmt.Printf("Pull: %s -> %s\n", args[2], args[3])
